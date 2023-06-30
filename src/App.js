@@ -19,7 +19,7 @@ const App = () => {
   const [page, setpage] = useState(0);
 
   return <Layout>
-      <Sider id="sidebar" theme='light'  width={250} breakpoint="md" collapsedWidth="0" onBreakpoint={broken => {console.log(broken);}} onCollapse={(collapsed, type) => {setview(collapsed); console.log(collapsed, type);}}>
+      <Sider id="sidebar" theme='light'  width={250} breakpoint="md" collapsedWidth="0" onCollapse={(collapsed, type) => {setview(collapsed); console.log(collapsed, type);}}>
         <div className="demo-logo-vertical" />
         <div className='heading'>
           <h4>My Dashboard</h4>
