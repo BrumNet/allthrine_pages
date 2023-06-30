@@ -14,12 +14,12 @@ const {Header, Content, Sider} = Layout;
 const App = () => {
   const {token: {colorBgContainer}} = theme.useToken();
   const labels = ["My Products","Add New Product","Report A Problem","Chat with Manager"]
-  
 
+  const [open, setview] = useState(true);
   const [page, setpage] = useState(0);
 
   return <Layout>
-      <Sider id="sidebar" theme='light' breakpoint="lg" width={250} collapsedWidth="0" onBreakpoint={broken => {console.log(broken);}} onCollapse={(collapsed, type) => {console.log(collapsed, type);}}>
+      <Sider id="sidebar" theme='light'  width={250} breakpoint="md" collapsedWidth="0" onBreakpoint={broken => {console.log(broken);}} onCollapse={(collapsed, type) => {setview(collapsed); console.log(collapsed, type);}}>
         <div className="demo-logo-vertical" />
         <div className='heading'>
           <h4>My Dashboard</h4>
@@ -35,7 +35,7 @@ const App = () => {
           <div><i>www.pages.allthrine.com</i></div>
         </div>
       </Sider>
-      <Layout>
+      {open?<Layout>
         <Header style={{padding: 0, minHeight: 150, background: colorBgContainer}}>
           <div id='headingTitle'>
             <h4>{labels[page]??"Settings"}</h4>
@@ -51,7 +51,7 @@ const App = () => {
          <Settings/>
          }
         </Content>
-      </Layout>
+      </Layout>:<></>}
     </Layout>;
 };
 export default App;

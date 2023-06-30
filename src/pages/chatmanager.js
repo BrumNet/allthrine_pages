@@ -4,7 +4,7 @@ import "./styles/chatmanager.css"
  
 
 const App = () => {
-  return <><div id="chatleft">
+  return <div id="chatleft">
             <div id="chat">
                 <div className="messageme">
                 <Card className="card" title="My message">
@@ -29,6 +29,6 @@ const App = () => {
             </div>
             <div id="message_tools"><Button>Send</Button><Input className='input inputsmall'/></div>
           </div>
-        </>
+        
 };
 export default App;

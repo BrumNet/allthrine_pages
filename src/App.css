@@ -1,3 +1,15 @@
+#menucontrol{
+  display: none;
+  position: absolute;
+  z-index: 5;
+}
+
+@media (max-width: 700px){
+  #menucontrol{
+    display: initial;
+  }
+}
+
 #sidebar{
   position: relative;
   height: 100vh;
