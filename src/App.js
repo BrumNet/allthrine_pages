@@ -35,7 +35,7 @@ const App = () => {
           <div><i>www.pages.allthrine.com</i></div>
         </div>
       </Sider>
-      {open?<Layout>
+      {open || window.screen.width > 760 ? <Layout>
         <Header style={{padding: 0, minHeight: 150, background: colorBgContainer}}>
           <div id='headingTitle'>
             <h4>{labels[page]??"Settings"}</h4>
