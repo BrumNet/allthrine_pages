@@ -1,0 +1,27 @@
+  table{
+    box-sizing: border-box;
+    width: 90%;
+    border-collapse: collapse;
+    margin-left: 5%;
+  }
+  
+  thead{ 
+    text-align: left;
+    border-bottom: 2px solid #59ADFF;
+  }
+  
+  th, td{
+    padding: 8px;
+  }
+ 
+  @media (min-width:900px){
+    .small_table_item{
+      display: none;
+    }
+  }
+  @media (max-width:900px){
+  .big_table_item{
+    display: none;
+  }
+
+  }

@@ -1,38 +1,72 @@
-.App {
+#sidebar{
+  position: relative;
+  height: 100vh;
+}
+
+@media (max-width:900px){
+    #sidebar{
+      min-width: 50px;
+    }
+}
+
+.heading{
+  padding: 10% 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.heading h4{
+  color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.heading p{
+  color: #59ADFF;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.menu_buttons{
+  text-align: right;
+  background-color: #59ADFF;
+  border-radius: 0;
+  border: none;
+  color:white
 }
 
-.App-link {
-  color: #61dafb;
+.active_buttons{
+  background-color: white;
+  color: #59ADFF;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#but4{
+  margin-top: 50%;
+}
+
+#brand{
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+
+}
+
+@media (max-width:900px){
+  #brand div{
+    display: none;
+  }  
+}
+
+
+#headingTitle{
+  float: left;
+  margin-left: 50px;
+}
+
+#headingButton{
+  float: right;
+  color: #59ADFF;
+  border: 1px solid #59ADFF;
+  margin: 40px;
+  border-radius: 0%;
+}
+
+#content{
+  padding: 0 50px;
+  height: 68vh;
 }

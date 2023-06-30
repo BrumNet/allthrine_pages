@@ -1,0 +1,16 @@
+ 
+  .but{
+    color:#59ADFF;
+    border-color: #59ADFF;
+    min-width: 150px;
+  }
+
+  #settingsleft{
+    width: 40%;
+  }
+
+@media (max-width: 900px){
+  #settingsleft{
+    width: 100%;
+  }
+}

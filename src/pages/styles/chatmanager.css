@@ -1,0 +1,67 @@
+ #chatleft{
+    position: relative;
+    height: 100%;
+    width: 70%;
+    margin-left: 5em;
+    border: 2px solid #59ADFF;
+    border-bottom: none;
+  }
+
+  @media (max-width:900px){
+    #chatleft{
+      width: 100%;
+      margin-left: 0em;
+      border: none;
+      border-top: 2px solid #59ADFF;
+      background-color: white;
+    }
+  }
+
+  #chat{
+    box-sizing: border-box;
+    height: 100%;
+    overflow-y: scroll;
+    padding-bottom: 10%;
+  }
+
+  .messageme{
+    clear: both;
+    float: right;
+    padding-top: 1em;
+    max-width: 80%;
+  }
+
+  .messagefrom{
+    clear: both;
+    float: left;
+    padding-top: 1em;
+    max-width: 80%;
+  }
+  #message_tools{
+    width: 100%;
+    position: absolute;
+    bottom: 2%;
+
+  }
+
+  #message_tools *{
+    float: right;
+    margin-right: 2%;
+  }
+
+  #message_tools button{
+    min-width: 15%;
+  }
+
+  .input{
+    border: 1px solid #59ADFF;
+    border-radius: 0%;
+  }
+  
+  .inputsmall{
+    width: 80%;
+  }
+
+#footer{
+  display: none;
+}
