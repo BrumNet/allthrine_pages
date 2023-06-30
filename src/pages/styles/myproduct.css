@@ -23,5 +23,10 @@
   .big_table_item{
     display: none;
   }
+  }
 
+  @media (max-width:400px){
+    #headingButton{
+      display: none;
+    }
   }
