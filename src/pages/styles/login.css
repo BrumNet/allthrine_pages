@@ -1,0 +1,30 @@
+#login_page{
+    min-height: 100vh;
+    background-color: #59ADFF;
+}
+
+#login_content{
+    background-color: white;
+    min-width: 30vw;
+    float: right;
+    padding: 4em;
+    min-height: 75vh;
+}
+
+#login_content p{
+    clear: both;
+    float: right;
+    font-weight: 300;
+    padding-bottom: 7%;
+}
+
+#login_title{
+    font-size: larger;
+}
+
+#login_content button{
+    clear: both;
+    float: left;
+    margin-top: 7%;
+    margin-bottom: 7%;
+}

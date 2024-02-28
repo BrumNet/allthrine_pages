@@ -1,13 +1,14 @@
 import React from 'react';
 import {Button,} from 'antd';
+import { Link } from 'react-router-dom';
 import "./styles/settings.css"
  
 
 const App = () => { 
   return <><div id="settingsleft">
-          <center><Button className="but">Change Password</Button></center>
+          <center><Link to="/changepassword"><Button className="but">Change Password</Button></Link></center>
              <br/><br/>
-          <center><Button className="but">Log Out</Button></center>
+          <center><Link to="/"><Button className="but">Log Out</Button></Link></center>
            </div>
         </>
 };
